@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-area, .footer-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%vw;
+    background-color: rgb(1, 1, 51);
+
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+
+
+    & > #header-content, #footer-content, #main-content {
+        width: 800px;
+        border: 2px solid;
+        margin: auto 0;
+    }
+
+    & > #main-content {
+        min-height: 50px;       // temp
+    }
+    & > header-content {
+    }
+}

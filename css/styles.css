@@ -1,3 +1,5 @@
+/* Defaults for the page
+*/
 * {
     margin: 0px;
     padding: 0px;
@@ -5,6 +7,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Main sections of display and used as full width backgrounds
+*/
 .header-area, .footer-area, .main-area {
     width: 100%vw;
 
@@ -12,21 +16,26 @@
     justify-content: center;
     align-content: space-between;
 
+    /* Content areas are horizontally centered over the 
+        background areas and contain the active content of the
+        page */
     & > #header-content, #footer-content, #main-content {
         width: 800px;
         border: 2px solid;      /* TEMP */
         margin: auto 0;
     }
-    /* & > header-content {
-    } */
 }
+
+/* Set header and footer colors
+*/
 .header-area, .footer-area {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(1, 1, 51);
 }
 
-
+/* Main content for page sits between header and footer, and is
+    centred horizontally */
 #main-content {
 
     /* Overall grid space */
@@ -45,8 +54,14 @@
             & .grid-items {
                 width: 48px;
                 height: 48px;
-                background-color: blue;     /* TEMP */
+                background-color: rgb(0, 105, 139);     /* TEMP */
                 /* padding: 5px; */
+                transition: background-color 1s ease-out;
+
+                &:hover {
+                    background-color: rgb(56, 205, 254);
+                    transition: none;
+                }
             }
         }
     }

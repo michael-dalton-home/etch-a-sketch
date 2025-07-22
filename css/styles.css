@@ -21,7 +21,7 @@
         page */
     & > #header-content, #footer-content, #main-content {
         width: 800px;
-        border: 2px solid;      /* TEMP */
+        /* border: 2px solid;      TEMP */
         margin: auto 0;
     }
 }
@@ -32,11 +32,17 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(1, 1, 51);
+    color: grey;
 }
 
 /* Main content for page sits between header and footer, and is
     centred horizontally */
 #main-content {
+
+    & > #set-grid-size {
+        margin: 10px;
+        width: 100px;
+    }
 
     /* Overall grid space */
     & > #div-grid {
@@ -52,16 +58,9 @@
 
             /* 16 individual boxes for each row (js adds this) */
             & .grid-items {
-                width: 48px;
-                height: 48px;
+                /* width: 48px;
+                height: 48px; */
                 background-color: rgb(0, 105, 139);     /* TEMP */
-                /* padding: 5px; */
-                transition: background-color 1s ease-out;
-
-                &:hover {
-                    background-color: rgb(56, 205, 254);
-                    transition: none;
-                }
             }
         }
     }

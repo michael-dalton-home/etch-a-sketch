@@ -5,3 +5,5 @@ https://www.theodinproject.com/lessons/foundations-etch-a-sketch
 
 Timer: 
 60m basic html frame with css
+90m grid creation and hover
+45m grid size button and rebuild

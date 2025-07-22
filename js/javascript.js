@@ -3,11 +3,11 @@
 const GRID_ROWS = 16;
 const GRID_COLS = 16;
 
+const divGrid = document.querySelector('#div-grid');
 
 
 function build_new_grid(container) {
 
-    let y_divs, x_divs = [];
     let new_row = undefined;
     let new_item = undefined;
 
@@ -24,4 +24,10 @@ function build_new_grid(container) {
             new_row.appendChild(new_item);
         }
     }
+}
+
+/* MAIN 
+*/
+{
+    build_new_grid(divGrid);
 }
